@@ -7,7 +7,7 @@ import { FormEvent } from 'react'
 export default function Signup() {
     // const router = useNavigation()
 
-    async function handleSubmit(event) {
+    async function handleSubmit(event: any) {
         event.preventDefault()
 
         const formData = new FormData(event.cuurentTarget)
@@ -29,7 +29,11 @@ export default function Signup() {
         })
 console.log(response)
         if (response.ok) {
-            NavigationPreloadManager.push('/profile')
+            console.log(response.status)
+            console.log(response.statusText)
+            console.log(response.headers)
+            console.log(response.url)
+            console.log(response.ok)
         }
         else {
             alert(response.statusText)

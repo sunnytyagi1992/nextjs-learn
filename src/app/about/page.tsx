@@ -26,8 +26,7 @@ function Profile() {
   return (
     <div>
         <h1>hello</h1>
-      <h1 className='text-white text-3xl'>{map(data.users.name)}</h1>
-      <p>{data.users.password}</p>
+     
     </div>
   )
 }

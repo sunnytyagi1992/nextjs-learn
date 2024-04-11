@@ -8,7 +8,7 @@ const Home = () => {
     const [counter, setCounter] = useState(0); 
     const [initialCount, setInitialCount] = useState(0); 
   
-    const handleInitialCountChange = (event) => { 
+    const handleInitialCountChange = (event: any) => { 
         setInitialCount(Number(event.target.value)); 
     }; 
   
@@ -25,11 +25,11 @@ const Home = () => {
     }; 
   
     return ( 
-        <div style={styles.container}> 
+        <div > 
             <h1 style={styles.heading}> 
                 Geeksforgeeks 
             </h1> 
-            <h2 style={styles.header}> 
+            <h2 > 
                 Counter App 
             </h2> 
             <div style={styles.counterValue}> 
