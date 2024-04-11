@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-<SpeedInsights />
 
 
       
@@ -29,7 +28,10 @@ export default function RootLayout({
         <h2>Nav Item </h2>
         {/* <SpeedInsights /> */}
         
-        {children}</body>
+        {children}
+        <SpeedInsights />
+
+        </body>
     </html>
   );
 }
