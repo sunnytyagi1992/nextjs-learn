@@ -38,11 +38,11 @@ const Home = () => {
             <div style={styles.buttons}> 
                 <button style={styles.button}  
                         onClick={handleClick1}> 
-                    Increment 
+                    Increment--
                 </button> 
                 <button style={styles.button}  
                         onClick={handleClick2}> 
-                    Decrement 
+                    Decrement ++
                 </button> 
             </div> 
             <div style={{ margin: "1.5rem" }}> 
