@@ -20,11 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
 
+<SpeedInsights />
+
+
       
       <body className={inter.className}>
         
         <h2>Nav Item </h2>
-        <SpeedInsights />
+        {/* <SpeedInsights /> */}
         
         {children}</body>
     </html>
