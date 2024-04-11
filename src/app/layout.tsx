@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 import type { Metadata } from "next";
@@ -29,7 +28,6 @@ export default function RootLayout({
         {/* <SpeedInsights /> */}
         
         {children}
-        <SpeedInsights />
 
         </body>
     </html>
