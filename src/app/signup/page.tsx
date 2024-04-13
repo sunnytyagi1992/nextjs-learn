@@ -16,7 +16,7 @@ export default function Signup() {
         const password = formData.get('password')
 
 
-        const response = await fetch('http://localhost:3006/api/auth/singup',{
+        const response = await fetch('http://localhost:3000/api/auth/singup',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
