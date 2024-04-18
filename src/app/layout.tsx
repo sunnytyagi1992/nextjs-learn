@@ -24,8 +24,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
         
-        <h2>Nav Item </h2>
-        {/* <SpeedInsights /> */}
+        
         
         {children}
 

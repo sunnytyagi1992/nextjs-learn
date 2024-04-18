@@ -1,3 +1,15 @@
-import { PrismaClient } from "@prisma/client/extension";
+"use server"
 
-export const prisma = new PrismaClient
+import { prisma } from "../utils/prisma"
+
+export async function create(formData: FormData){
+
+    const input =  formData.get("input") as string
+
+
+   const todo =  await prisma.todo.create({
+        data: {
+            title: input
+        }
+    })
+}
