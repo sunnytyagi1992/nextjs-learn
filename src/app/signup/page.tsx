@@ -41,7 +41,7 @@ console.log(response)
     }
 
     return (
-        <form className='bg-white text-black' onSubmit = {handleSubmit}>
+        <form className='bg-gray-500 text-white' onSubmit = {handleSubmit}>
             
             <label>Username here</label>
             <input type="text" name="username" />
